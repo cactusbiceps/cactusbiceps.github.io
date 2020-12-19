@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Virtual Buzzer</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="./firebasePlayer.css">
+</head>
+
+<body>
+
+    <label for="groupName">Group: </label>
+    <input type="text" required id="groupName"><br>
+    <label for="inputName">Name: </label>
+    <input type="text" required id="inputName"><br>
+    <button id="connectBtn" onclick="connectToGame()">Connect to Game</button>
+    <button style="visibility:hidden" id="buzzInBtn" onclick="buzzIn()">Buzz In!</button>
+    <p id="firstToBuzzInElement"></p>
+
+    <br><br>
+    <p>
+        Have an Android phone?
+    </p>
+    <p>
+        <a style="color: white;" href="https://play.google.com/store/apps/details?id=com.cactusbiceps.triviabuzzer" target="_blank">Google
+            Play Download</a>
+            <br>
+    </p>
+    <p>
+        <a style="color: white;" href="https://jeffpettyjohn.com/download/buzz_in_v1-0-3.apk">Download it straight from my website.</a>
+    </p>
+
+    <canvas id="2d"></canvas>
+
+</body>
+
+<script src="confetti.min.js"></script>
+
+<!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-app.js"></script>
+
+<!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+<!-- <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-analytics.js"></script> -->
+
+<!-- Add Firebase products that you want to use -->
+<script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-database.js"></script>
+
+<!-- Custom Firebase code -->
+<script defer src="firebasePlayer.js"></script>
+
+</html>
