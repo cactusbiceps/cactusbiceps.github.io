@@ -32,6 +32,7 @@ function connectToGame() {
             console.log("Enable buzzer value: " + snapshot.val());
             if (snapshot.val()) {
                 createGameBtn.style.visibility = "visible";
+                createGameBtn.style.display = "block";
             } else {
                 createGameBtn.style.visibility = "hidden";
             }
