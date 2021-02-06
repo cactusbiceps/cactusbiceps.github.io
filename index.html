@@ -1,9 +1,165 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta http-equiv="refresh" content="0; url='http://www.buzzin.fun/virtual-buzzer'" />
-  </head>
-  <body>
-    <p>Please follow <a href="http://www.buzzin.fun/virtual-buzzer</a>.</p>
-  </body>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Brief article discussing the Buzz In! virtual buzzer application.">
+    <meta name="author" content="Jeff Pettyjohn">
+
+    <title>Buzz In!</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Cactus Biceps</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./virtual-buzzer">Web Player</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="../#contact">Contact</a>
+                    </li> -->
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h1 class="mt-5">Buzz In!</h1>
+                <p><a href="https://play.google.com/store/apps/details?id=com.cactusbiceps.triviabuzzer"
+                        target="_blank">Download</a></p>
+                <p class="lead">A virtual buzzer allowing you to play quiz based games with friends and family around
+                    the world.</p>
+                <img src="./img/Trivia Buzzer Feature Graphic.png"><br><br>
+                <div class="text-left">
+                    <p>On Easter, my extended family organized a trivia session on a Zoom video conference where there
+                        was
+                        one host and lots of teams trying to be the first to answer a question by typing it into the
+                        group
+                        chat. While this was a lot of fun. I thought to myself that it would be better if we had the
+                        opportunity to buzz in instead of just frantically typing away. A buzzer approach would even the
+                        playing field more by allowing the teams that were slower typers to still participate by only
+                        needing to hit a single button. This approach would also allow for more social interaction
+                        by allowing the first team that buzzed in to answer aloud.</p>
+                    <p>So, soon after that game finished, I searched for buzzer applications that would meet this
+                        goal and was surprised to see that there were not any (at least on Google Play). The only other
+                        similar apps required users to be on the same WiFi network or same room using a Bluetooth
+                        connection, but this solution does not work well for family video conferences where people are
+                        in
+                        different cities and states.</p>
+                    <p>
+                        Since I found an application that did not sound overly complicated to make that had the
+                        potential to
+                        bring a lot of joy to people, I set out to make the Buzz In! app. All in all, the app took me a
+                        few
+                        weeks to create
+                        working on it off and on. You can now find it published on the Google Play Store <a
+                            href="https://play.google.com/store/apps/details?id=com.cactusbiceps.triviabuzzer"
+                            target="_blank">here</a>.
+                    </p>
+                    <a href="https://play.google.com/store/apps/details?id=com.cactusbiceps.triviabuzzer"
+                        target="_blank">Buzz In!</a>
+                    <br><br>
+                    <h3>Technical Details</h3>
+                    <p>The buzzer requires at least one host device and one player device in order to use. Only one
+                        device should
+                        be the
+                        host at any point in the game in order to accurately keep track of which player was the first to
+                        buzz
+                        in.</p>
+
+                    <p>The host device is able to view the timestamp and order of every player that buzzes in. The
+                        host
+                        is also
+                        able to
+                        clear the round to allow for new buzzes.
+                    </p>
+
+                    <p>
+                        Each player device can buzz in and celebrate with confetti and exploding tacos whenever they
+                        are
+                        the first
+                        to buzz
+                        in.
+                    </p>
+                    <p>
+                        The Buzz In! app requires an Internet connection for every device in the competition.
+                    </p>
+
+                    <h3>Getting Started</h3>
+                    <p>
+                        Open the app then enter a Group Name and a Player Name. The Group Name needs to match with
+                        everyone else
+                        playing, so
+                        ensure everyone uses the same group (watch out for typos). The Player Name should be the name
+                        you
+                        would
+                        like to use
+                        when buzzing in. This name will be shown to the host when you buzz in so make it as creative as
+                        you
+                        like!
+                    </p>
+                    <p>
+                        After entering the Group and Player Name fields, go to the Host or Player screen depending
+                        on
+                        which role you
+                        want to
+                        be. The host device will need to initiate the group and round by clicking on the "New Round"
+                        button
+                        before anyone
+                        will be allowed to buzz in.
+                    </p>
+                    <h3>What about non-Android users?</h3>
+                    <p>
+                        Currently, the game host has to use the Android app, but I have created a web friendly version
+                        that players can use to buzz-in if they do not have an Android device. If you are interested in
+                        this arrangement, please contact me, and I will happily share the link with you.
+                    </p>
+                    <h3>What types of games can I play?</h3>
+                    <p>
+                        The app is a great addition to any type of game show, such as Jeopardy! or Family Feud. It also
+                        works well in quiz bowl or general trivia type settings.
+                    </p>
+                    <p>
+                        I have personally used it to play Jeopardy with friends by creating my own question board using
+                        Flippity. Flippity allows you to create a trivia board that you can easily screen share with
+                        friends using a video conference platform, such as Google Meet or Zoom. Check out Flippity here:
+                        <a href="https://www.flippity.net/QuizShow.htm"
+                            target="_blank">https://www.flippity.net/QuizShow.htm</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript -->
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+
 </html>
