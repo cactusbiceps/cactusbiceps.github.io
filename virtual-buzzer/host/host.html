@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Virtual Buzzer</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="./firebasePlayer.css">
+
+    <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.22/css/jquery.dataTables.min.css">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+</head>
+
+<body>
+
+    <label for="groupName">Group: </label>
+    <input type="text" required id="groupName"><br>
+    <button id="createGameBtn" onclick="createGame()">Create Game</button>
+    <button style="visibility:hidden" id="newRoundBtn" onclick="newRound()">New Round</button>
+    <p style="color:yellow" id="firstToBuzzInElement"></p>
+
+    <table id="myTable" class="display">
+        <thead>
+            <tr>
+                <th>Username</th>
+                <th>Timestamp</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <p>
+        Have an Android phone?
+    </p>
+    <p>
+        <a style="color: white;" href="https://play.google.com/store/apps/details?id=com.cactusbiceps.triviabuzzer" target="_blank">Google
+            Play Download</a>
+            <br>
+    </p>
+
+    <canvas id="2d"></canvas>
+
+</body>
+
+<script src="confetti.min.js"></script>
+
+<!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-app.js"></script>
+
+<!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+<!-- <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-analytics.js"></script> -->
+
+<!-- Add Firebase products that you want to use -->
+<script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-database.js"></script>
+<!-- <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-firestore.js"></script> -->
+
+<!-- Custom Firebase code -->
+<script defer src="firebaseHost.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="//cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>
+
+</html>
