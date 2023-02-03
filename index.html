@@ -2,179 +2,577 @@
 <html lang="en">
 
 <head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta name="description" content="Cactus Biceps - Web development, workouts, and apps for small businesses.">
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Brief article discussing the Buzz In! virtual buzzer application.">
-    <meta name="author" content="Jeff Pettyjohn">
-    
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
+  <title>Cactus Biceps</title>
+  <meta content="Cactus Biceps" name="description">
+  <meta content="Cactus Biceps" name="keywords">
 
-    <title>Buzz In!</title>
+  <!-- Facebook Opengraph integration: https://developers.facebook.com/docs/sharing/opengraph -->
+  <meta property="og:title" content="Cactus Biceps Home Page">
+  <meta property="og:image" content="">
+  <meta property="og:url" content="www.cactusbiceps.com">
+  <meta property="og:site_name" content="Cactus Biceps">
+  <meta property="og:description" content="Web Development, workouts, and apps for Small Businesses">
 
-    <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Twitter Cards integration: https://dev.twitter.com/cards/  -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="">
+  <meta name="twitter:title" content="Cactus Biceps">
+  <meta name="twitter:description" content="Web Development, workouts, and apps for Small Businesses">
+  <meta name="twitter:image" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Imperial - v5.10.0
+  * Template URL: https://bootstrapmade.com/imperial-free-onepage-bootstrap-theme/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
 </head>
 
 <body>
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
-        <div class="container">
-            <a class="navbar-brand" href="#">Cactus Biceps</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
-                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home
-                            <span class="sr-only">(current)</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./virtual-buzzer">Web Player</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./virtual-buzzer/host">Web Host</a>
-                    </li>
-                </ul>
-            </div>
+  <!-- ======= Hero Section ======= -->
+  <section id="hero">
+    <div class="hero-container">
+      <div data-aos="fade-in">
+        <div class="hero-logo">
+          <img class="" src="assets/img/cb-logo.png" alt="Cactus Biceps">
         </div>
-    </nav>
 
-    <!-- Page Content -->
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <h1 class="mt-5">Buzz In!</h1>
-                <p><a href="https://play.google.com/store/apps/details?id=com.cactusbiceps.triviabuzzer"
-                        target="_blank">Download</a></p>
-                <p class="lead">A virtual buzzer allowing you to play quiz based games with friends and family around
-                    the world.</p>
-                <img src="./img/Trivia Buzzer Feature Graphic.png"><br><br>
-                <div class="text-left">
-                    <p>On Easter, my extended family organized a trivia session on a Zoom video conference where there
-                        was
-                        one host and lots of teams trying to be the first to answer a question by typing it into the
-                        group
-                        chat. While this was a lot of fun. I thought to myself that it would be better if we had the
-                        opportunity to buzz in instead of just frantically typing away. A buzzer approach would even the
-                        playing field more by allowing the teams that were slower typers to still participate by only
-                        needing to hit a single button. This approach would also allow for more social interaction
-                        by allowing the first team that buzzed in to answer aloud.</p>
-                    <p>So, soon after that game finished, I searched for buzzer applications that would meet this
-                        goal and was surprised to see that there were not any (at least on Google Play). The only other
-                        similar apps required users to be on the same WiFi network or same room using a Bluetooth
-                        connection, but this solution does not work well for family video conferences where people are
-                        in
-                        different cities and states.</p>
-                    <p>
-                        Since I found an application that did not sound overly complicated to make that had the
-                        potential to
-                        bring a lot of joy to people, I set out to make the Buzz In! app. All in all, the app took me a
-                        few
-                        weeks to create
-                        working on it off and on. You can now find it published on the Google Play Store <a
-                            href="https://play.google.com/store/apps/details?id=com.cactusbiceps.triviabuzzer"
-                            target="_blank">here</a>.
-                    </p>
-                    <a href="https://play.google.com/store/apps/details?id=com.cactusbiceps.triviabuzzer"
-                        target="_blank">Buzz In!</a>
-                    <br><br>
-                    <h3>Technical Details</h3>
-                    <p>The buzzer requires at least one host device and one player device in order to use. Only one
-                        device should
-                        be the
-                        host at any point in the game in order to accurately keep track of which player was the first to
-                        buzz
-                        in.</p>
-
-                    <p>The host device is able to view the timestamp and order of every player that buzzes in. The
-                        host
-                        is also
-                        able to
-                        clear the round to allow for new buzzes.
-                    </p>
-
-                    <p>
-                        Each player device can buzz in and celebrate with confetti and exploding tacos whenever they
-                        are
-                        the first
-                        to buzz
-                        in.
-                    </p>
-                    <p>
-                        The Buzz In! app requires an Internet connection for every device in the competition.
-                    </p>
-
-                    <h3>Getting Started</h3>
-                    <p>
-                        Open the app then enter a Group Name and a Player Name. The Group Name needs to match with
-                        everyone else
-                        playing, so
-                        ensure everyone uses the same group (watch out for typos). The Player Name should be the name
-                        you
-                        would
-                        like to use
-                        when buzzing in. This name will be shown to the host when you buzz in so make it as creative as
-                        you
-                        like!
-                    </p>
-                    <p>
-                        After entering the Group and Player Name fields, go to the Host or Player screen depending
-                        on
-                        which role you
-                        want to
-                        be. The host device will need to initiate the group and round by clicking on the "New Round"
-                        button
-                        before anyone
-                        will be allowed to buzz in.
-                    </p>
-                    <h3>What about non-Android users?</h3>
-                    <p>
-                        There are now web friendly versions for the players and host. 
-                        <a href="./virtual-buzzer/host">Player</a> <a href="./virtual-buzzer/host">Host</a>
-                        <br><br><i>This site and service have recurring expenses to run. Please consider donating through PayPal if you 
-                        find it useful or if you are interested in an Apple iOS Buzz In! app.</i>
-                        <form action="https://www.paypal.com/donate" method="post" target="_top">
-                            <input type="hidden" name="hosted_button_id" value="BLCEG2X8JN4A8" />
-                            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
-                            <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
-                        </form>
-                    </p>
-                    <h3>What types of games can I play?</h3>
-                    <p>
-                        The app is a great addition to any type of game show, such as Jeopardy! or Family Feud. It also
-                        works well in quiz bowl or general trivia type settings.
-                    </p>
-                    <p>
-                        I have personally used it to play Jeopardy with friends by creating my own question board using
-                        Flippity. Flippity allows you to create a trivia board that you can easily screen share with
-                        friends using a video conference platform, such as Google Meet or Zoom. Check out Flippity here:
-                        <a href="https://www.flippity.net/QuizShow.htm"
-                            target="_blank">https://www.flippity.net/QuizShow.htm</a>
-                    </p>
-                    <h3>Interested in using the app for a live or virtual event with over 100 participants?</h3>
-                    <p>
-                        For a small fee, the participants per group limit can be increased to meet your needs. Please contact us at cactusbiceps [at] gmail.com
-                        for details.
-                    </p>
-                </div>
-            </div>
+        <h1>Welcome to Cactus Biceps</h1>
+        <h2>We create <span class="typed" data-typed-items="mobile apps, websites for small businesses, workout plans"></span></h2>
+        <div class="actions">
+          <a href="#services" class="btn-get-started">Our Services</a>
+          <a href="#contact" class="btn-services">Contact Us</a>
         </div>
+      </div>
     </div>
+  </section><!-- End Hero -->
 
-    <!-- Bootstrap core JavaScript -->
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- ======= Header ======= -->
+  <header id="header" class="d-flex align-items-center">
+    <div class="container d-flex align-items-center justify-content-between">
 
-    <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+      <a href="index.html" class="logo mr-auto"><img src="assets/img/cb-logo.png" alt=""></a>
+      <!-- Uncomment below if you prefer to use a text logo -->
+      <!-- <h1 class="logo mr-auto"><a href="index.html">Cactus Biceps</a></h1> -->
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <!-- <li><a class="nav-link scrollto" href="#about">About</a></li> -->
+          <li><a class="nav-link scrollto" href="#services">Services</a></li>
+          <li><a class="nav-link scrollto " href="#portfolio">Portfolio</a></li>
+          <li><a class="nav-link scrollto" href="#testimonials">Testimonials</a></li>
+          <li><a class="nav-link scrollto" href="#team">Team</a></li>
+          <li class="dropdown"><a href="#"><span>Miscellaneous</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a target="_blank" href="https://play.google.com/store/apps/developer?id=Cactus+Biceps">Android Apps</a></li>
+              <li class="dropdown"><a href="https://cactusbiceps.com/buzz-in"><span>Web Virtual Buzzer</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="https://cactusbiceps.com/virtual-buzzer/host/">Buzzer Group Host</a></li>
+                  <li><a href="https://cactusbiceps.com/virtual-buzzer/">Buzzer Player</a></li>
+                </ul>
+              </li>
+              <li class="dropdown"><a href="#"><span>Privacy Policy</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a target="_blank" href="https://cactusbiceps.com/privacy-policy/buzzer/">Buzz In Privacy Policy</a></li>
+                  <li><a target="_blank" href="https://cactusbiceps.com/psa/privacy-policy/">Phone Security App Privacy Policy</a></li>
+                  <!-- <li><a href="https://cactusbiceps.com/virtual-buzzer/">Phone Security App Pro Privacy Policy</a></li> -->
+                  <!-- <li><a href="#">Deep Drop Down 3</a></li>
+                  <li><a href="#">Deep Drop Down 4</a></li> -->
+                </ul>
+              </li>
+              <!-- <li><a href="#">Drop Down 2</a></li>
+              <li><a href="#">Drop Down 3</a></li>
+              <li><a href="#">Drop Down 4</a></li> -->
+            </ul>
+          </li>
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <!-- <section id="about">
+      <div class="container" data-aos="fade-up">
+        <div class="row">
+          <div class="col-md-12">
+            <h3 class="section-title">About Us</h3>
+            <div class="section-title-divider"></div>
+            <p class="section-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam</p>
+          </div>
+        </div>
+      </div>
+      <div class="container about-container" data-aos="fade-up" data-aos-delay="200">
+        <div class="row">
+
+          <div class="col-lg-6 about-img">
+            <img src="assets/img/team2.jpg" alt="">
+          </div>
+
+          <div class="col-md-6 about-content">
+            <h2 class="about-title">We provide great services and ideas</h2>
+            <p class="about-text">
+              We are a couple of engineers that enjoy working out, playing video games, and solving problems.
+            </p>
+            <p class="about-text">
+              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
+              id est laborum
+            </p>
+            <p class="about-text">
+              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt molli.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section> -->
+    <!-- End About Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services">
+      <div class="container">
+        <div class="row" data-aos="fade-up">
+          <div class="col-md-12">
+            <h3 class="section-title">Our Services</h3>
+            <div class="section-title-divider"></div>
+            <p class="section-description">From custom websites to biceps workouts, we got you covered.</p>
+          </div>
+        </div>
+
+        <div class="row" data-aos="fade-up" data-aos-delay="200">
+          <div class="col-lg-4 col-md-6 service-item">
+            <div class="service-icon"><i class="bi bi-laptop"></i></div>
+            <h4 class="service-title">Websites</a></h4>
+            <p class="service-description">We specialize in building an online presence for small businesses by creating 
+              websites that look great regardless of the size of the screen being used to view them.</p>
+          </div>
+          <div class="col-lg-4 col-md-6 service-item">
+            <div class="service-icon"><i class="bi bi-phone"></i></div>
+            <h4 class="service-title"><a href="https://play.google.com/store/apps/developer?id=Cactus+Biceps">Mobile Apps</a></h4>
+            <p class="service-description">We have built several Android applications that have been used by over 20k users to date!</p>
+          </div>
+          <div class="col-lg-4 col-md-6 service-item">
+            <div class="service-icon"><i class="bi bi-trophy"></i></div>
+            <h4 class="service-title">Workout Plans</a></h4>
+            <p class="service-description">We believe the key to success is biceps the size of a saguaro cactus. Let us help
+              you reach your goals.
+            </p>
+          </div>
+          <!-- <div class="col-lg-4 col-md-6 service-item">
+            <div class="service-icon"><i class="bi bi-binoculars"></i></div>
+            <h4 class="service-title"><a href="">Magni Dolores</a></h4>
+            <p class="service-description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+          </div>
+          <div class="col-lg-4 col-md-6 service-item">
+            <div class="service-icon"><i class="bi bi-brightness-high"></i></div>
+            <h4 class="service-title"><a href="">Nemo Enim</a></h4>
+            <p class="service-description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
+          </div>
+          <div class="col-lg-4 col-md-6 service-item">
+            <div class="service-icon"><i class="bi bi-calendar4-week"></i></div>
+            <h4 class="service-title"><a href="">Eiusmod Tempor</a></h4>
+            <p class="service-description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
+          </div> -->
+        </div>
+      </div>
+    </section><!-- End Services Section -->
+
+    <!-- ======= Subscribe Section ======= -->
+    <!-- <section id="subscribe">
+      <div class="container" data-aos="fade-up">
+        <div class="row">
+          <div class="col-md-8">
+            <h3 class="subscribe-title">Subscribe For Updates</h3>
+            <p class="subscribe-text">Join our 1000+ subscribers and get access to the latest tools, freebies, product announcements and much more!</p>
+          </div>
+          <div class="col-md-4 subscribe-btn-container">
+            <a class="subscribe-btn" href="#">Subscribe Now</a>
+          </div>
+        </div>
+      </div>
+    </section> -->
+    <!-- End Subscribe Section -->
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio">
+      <div class="container" data-aos="fade-up">
+        <div class="row">
+          <div class="col-md-12">
+            <h3 class="section-title">Portfolio</h3>
+            <div class="section-title-divider"></div>
+            <p class="section-description">Here is a sample of our previous work.</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-app">App</li>
+              <!-- <li data-filter=".filter-card">Card</li> -->
+              <li data-filter=".filter-web">Web</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row portfolio-container">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <img src="assets/img/portfolio/eden-portfolio-details.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Eden Wellness and Fitness</h4>
+              <p>Client Website</p>
+              <a href="assets/img/portfolio/eden-portfolio-details-1.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Eden Wellness and Fitness"><i class="bi bi-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bi bi-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <img src="assets/img/portfolio/psa-on-phone-image-more-width.png" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Phone Security App</h4>
+              <p>Android App</p>
+              <!-- <a href="assets/img/portfolio/psa-screenshot.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Android App"><i class="bi bi-plus"></i></a> -->
+              <a target="_blank" href="https://play.google.com/store/apps/details?id=com.cactusbiceps.phonesecurityapppro" class="details-link" title="More Details"><i class="bi bi-link"></i></a>
+            </div>
+          </div>
+
+          <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>App 2</h4>
+              <p>App</p>
+              <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 2"><i class="bi bi-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bi bi-link"></i></a>
+            </div>
+          </div> -->
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <img src="assets/img/portfolio/jeff-personal-website.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Personal Website</h4>
+              <p>Web</p>
+              <a href="assets/img/portfolio/jeff-personal-website.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Personal Website"><i class="bi bi-plus"></i></a>
+              <a target="_blank" href="https://jeffpettyjohn.com" class="details-link" title="More Details"><i class="bi bi-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <img src="assets/img/portfolio/buzz_in_on_phone_cropped.gif" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Buzz In! App</h4>
+              <p>Android App</p>
+              <!-- <a href="assets/img/portfolio/virtual_buzzer_icon3.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Trivia Buzzer"><i class="bi bi-plus"></i></a> -->
+              <a target="_blank" href="https://play.google.com/store/apps/details?id=com.cactusbiceps.triviabuzzer" class="details-link" title="More Details"><i class="bi bi-link"></i></a>
+            </div>
+          </div>
+
+          <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>App 3</h4>
+              <p>App</p>
+              <a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 3"><i class="bi bi-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bi bi-link"></i></a>
+            </div>
+          </div> -->
+
+          <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Card 1</h4>
+              <p>Card</p>
+              <a href="assets/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 1"><i class="bi bi-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bi bi-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Card 3</h4>
+              <p>Card</p>
+              <a href="assets/img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 3"><i class="bi bi-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bi bi-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Web 3</h4>
+              <p>Web</p>
+              <a href="assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 3"><i class="bi bi-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bi bi-link"></i></a>
+            </div>
+          </div> -->
+
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Section -->
+
+    <!-- ======= Testimonials Section ======= -->
+    <section id="testimonials">
+      <div class="container" data-aos="fade-up">
+        <div class="row">
+          <div class="col-md-12">
+            <h3 class="section-title">Testimonials</h3>
+            <div class="section-title-divider"></div>
+            <p class="section-description">When our customers win, we win.</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-3">
+            <div class="profile">
+              <div class="pic"><img src="assets/img/client-1.jpg" alt=""></div>
+              <h4>Michael Tweedy</h4>
+              <span>Outstanding Citizen</span>
+            </div>
+          </div>
+          <div class="col-md-9">
+            <div class="quote">
+              <b><img src="assets/img/quote_sign_left.png" alt=""></b> Cactus Biceps is excellent with their ingenuity on useful apps for 
+              everyday as well as excellent customer service and response. <small><img src="assets/img/quote_sign_right.png" alt=""></small>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-9">
+            <div class="quote">
+              <b><img src="assets/img/quote_sign_left.png" alt=""></b> Amazing working with Jeff. With very little details he was able to create a very appealing 
+              website that brought my vision to life. He's very responsive and quick turnaround for maintenance.  <small><img src="assets/img/quote_sign_right.png" alt=""></small>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="profile">
+              <a target="_blank" href="https://edenwellnessandfitness.com/">
+              <div class="pic"><img src="assets/img/eden-client-2.png" alt=""></div>
+              <h4>Courtney Sharp</h4>
+              <span>Eden Wellness and Fitness</span></a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Testimonials Section -->
+
+    <!-- ======= Team Section ======= -->
+    <section id="team">
+      <div class="container" data-aos="fade-up">
+        <div class="row">
+          <div class="col-md-12">
+            <h3 class="section-title">Our Team</h3>
+            <div class="section-title-divider"></div>
+            <p class="section-description">We are a team of two with lots of support from our loving wives.</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-3">
+            <div class="member">
+              <div class="pic"><img src="assets/img/team/jeff-portrait.jpg" alt=""></div>
+              <h4>Jeff Pettyjohn</h4>
+              <span>Designer</span>
+              <div class="social">
+                <a href="mailto:jeff@cactusbiceps.com"><i class="bi bi-envelope"></i></a>
+                <!-- <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a> -->
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="member">
+              <div class="pic"><img src="assets/img/team/chris-portrait.jpg" alt=""></div>
+              <h4>Chris Hulsey</h4>
+              <span>Janitor/Writer</span>
+              <div class="social">
+                <a href="mailto:chris@cactusbiceps.com"><i class="bi bi-envelope"></i></a>
+                <!-- <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a> -->
+              </div>
+            </div>
+          </div>
+
+          <!-- <div class="col-md-3">
+            <div class="member">
+              <div class="pic"><img src="assets/img/team/team-3.jpg" alt=""></div>
+              <h4>William Anderson</h4>
+              <span>CTO</span>
+              <div class="social">
+                <a href=""><i class="bi bi-twitter"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="member">
+              <div class="pic"><img src="assets/img/team/team-4.jpg" alt=""></div>
+              <h4>Amanda Jepson</h4>
+              <span>Accountant</span>
+              <div class="social">
+                <a href=""><i class="bi bi-twitter"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div> -->
+
+        </div>
+      </div>
+    </section><!-- End Team Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact">
+      <div class="container" data-aos="fade-up">
+        <div class="row">
+          <div class="col-md-12">
+            <h3 class="section-title">Contact Us</h3>
+            <div class="section-title-divider"></div>
+            <p class="section-description">We look forward to hearing from you!
+            </p>
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-3 col-md-4">
+            <div class="info">
+              <!-- <div>
+                <i class="bi bi-geo-alt"></i>
+                <p>A108 Adam Street<br>New York, NY 535022</p>
+              </div> -->
+
+              <div>
+                <a href="mailto:flex@cactusbiceps.com"><i class="bi bi-envelope"></i></a>
+                <p>flex@cactusbiceps.com</p>
+              </div>
+
+              <div>
+                <a target="_blank" href="https://www.instagram.com/cactusbiceps/"><i class="bi bi-instagram"></i></a>
+                <p>Cactus Flex Off Pictures</p>
+              </div>
+
+              <div>
+                <a target="_blank" href="https://www.youtube.com/@cactusbiceps2567"><i class="bi bi-youtube"></i></a>
+                <p>Product Videos</p>
+              </div>
+
+              <!-- <div>
+                <i class="bi bi-phone"></i>
+                <p>+1 5589 55488 55s</p>
+              </div> -->
+
+            </div>
+          </div>
+
+          <div class="col-lg-5 col-md-8">
+            <div class="form">
+              <form action="https://formspree.io/f/xyyakzoj" method="post" role="form" class="php-email-form">
+                <div class="form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group mt-3">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group mt-3">
+                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+                </div>
+                <div class="form-group mt-3">
+                  <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+                </div>
+                <div class="my-3">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+                </div>
+                <div class="text-center"><button type="submit">Send Message</button></div>
+              </form>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="copyright">
+            &copy; Copyright <strong>Cactus Biceps</strong>. All Rights Reserved
+          </div>
+          <div class="socialfooter">
+            <a href="mailto:flex@cactusbiceps.com"><i class="bi bi-envelope"> </i></a>
+            <a target="_blank" href="https://www.instagram.com/cactusbiceps/"><i class="bi bi-instagram col-md-4">  </i></a>
+            <a target="_blank" href="https://www.youtube.com/@cactusbiceps2567"><i class="bi bi-youtube col-md-4">  </i></a>
+          </div>
+          <div class="credits">
+            
+            <!--
+            All the links in the footer should remain intact.
+            You can delete the links only if you purchased the pro version.
+            Licensing information: https://bootstrapmade.com/license/
+            Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Imperial
+          -->
+            Inspiration from <a href="https://bootstrapmade.com/">BootstrapMade</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
 
 </body>
 
