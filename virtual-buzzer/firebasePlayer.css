@@ -24,8 +24,14 @@ button {
     display: inline-block;
     font-size: 40px;
     margin: 15px 15px 15px 15px;
-  }
+}
 
-  table {
-      color: #54afda;
-  }
+button:hover{
+    background: #1b9cc4;
+}
+
+button:active{background:#11627a;}
+
+table {
+    color: #54afda;
+}
