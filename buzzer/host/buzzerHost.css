@@ -1,0 +1,29 @@
+html, body{
+    background-color: #2B343C;
+    color:white;
+}
+
+button {
+    background-color: #1EAEDA;
+    border: 1px solid white;
+    /* height: 200px;
+    width: 200px; */
+    border-radius: 10%;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 15px 15px 15px 15px;
+}
+
+button:hover{
+    background: #1b9cc4;
+}
+
+button:active{background:#11627a;}
+
+table {
+    color: #54afda;
+}
