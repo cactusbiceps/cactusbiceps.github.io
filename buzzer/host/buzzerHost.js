@@ -4,7 +4,10 @@ const groupName = document.getElementById("groupName");
 const lockBuzzerButton = document.getElementById('lockBuzzerButton');
 const resetBuzzerButton = document.getElementById('resetBuzzerButton');
 const endGameButton = document.getElementById('endGameButton');
+const sendMsgToPlayersBtn = document.getElementById('sendMsgToPlayersBtn');
 const playerList = document.getElementById('playerList');
+const messageToPlayers = document.getElementById('messageToPlayers');
+
 var myTable = $('#myTable').DataTable();
 var buzzedInPlayerData = [];
 
@@ -26,6 +29,7 @@ const messageTypes = {
     TEAM_JOINED: 'TEAM_JOINED',
     TEAM_LEFT: 'TEAM_LEFT',
     BUZZER_LOCKED: 'BUZZER_LOCKED',
+    MESSAGE_FROM_HOST: 'MESSAGE_FROM_HOST',
     GAME_OVER: 'GAME_OVER'
 };
 
@@ -34,7 +38,6 @@ createGameBtn.addEventListener('click', () => {
 
         gameId = groupName.value.trim();
         webSocket = new WebSocket('wss://buzzer.cactusbiceps.com:4568');
-        // webSocket = new WebSocket('wss://localhost:4568');
 
         webSocket.onmessage = (event) => {
             console.log(event.data)
@@ -45,6 +48,13 @@ createGameBtn.addEventListener('click', () => {
               if(messageObj.type == messageTypes.BUZZ_IN) {
                 myTable.row.add([messageObj.value.team, messageObj.value.time]).draw();
               } else if(messageObj.type == messageTypes.TEAM_JOINED) {
+                playerList.innerHTML = '';
+                for (const team of messageObj.value.teams) {
+                    const teamListItem = document.createElement('li');
+                    teamListItem.textContent = team;
+                    playerList.appendChild(teamListItem);
+                }
+              } else if(messageObj.type == messageTypes.TEAM_LEFT) {
                 playerList.innerHTML = '';
                 for (const team of messageObj.value.teams) {
                     const teamListItem = document.createElement('li');
@@ -67,6 +77,21 @@ createGameBtn.addEventListener('click', () => {
     } else {
         firstToBuzzInElement.innerText = "Please fill out group field.";
     }
+});
+
+sendMsgToPlayersBtn.addEventListener('click', () => {
+    let msgFromHost = {
+        type: messageTypes.MESSAGE_FROM_HOST,
+        value: {
+            gameID: gameId,
+            broadcast: true,
+            teamName: 'N/A',
+            message: messageToPlayers.value
+        }
+    }
+
+    webSocket.send(JSON.stringify(msgFromHost));
+    messageToPlayers.value = '';
 });
 
 function gameInitialization() {
