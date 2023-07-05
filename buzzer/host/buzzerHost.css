@@ -24,6 +24,31 @@ button:hover{
 
 button:active{background:#11627a;}
 
+#sendMsgToPlayersBtn {
+    padding: 5px;
+    margin: 10px 10px 10px 0px;
+}
+
 table {
     color: #54afda;
+}
+
+#myTable_length {
+    color:white;
+}
+
+#myTable_info {
+    color: white;
+}
+
+select[name="myTable_length"] {
+    color:white;
+}
+
+input[type="search"] {
+    color:white;
+}
+
+#myTable_filter {
+    color:white;
 }
