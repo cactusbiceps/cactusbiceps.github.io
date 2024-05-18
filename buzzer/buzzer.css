@@ -19,6 +19,7 @@ button {
     display: inline-block;
     font-size: 40px;
     margin: 15px 15px 15px 15px;
+    touch-action: manipulation;
 }
 
 button:hover{
