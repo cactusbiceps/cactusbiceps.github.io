@@ -61,6 +61,8 @@ createGameBtn.addEventListener('click', () => {
                     teamListItem.textContent = team;
                     playerList.appendChild(teamListItem);
                 }
+              } else if(messageObj.type == messageTypes.FIRST_TO_BUZZ) {
+                  firstToBuzzInElement.innerText = messageObj.value.trim() + ' was the first to buzz in!';
               }
             } catch(e) {
               console.log(e.message);
